@@ -26,40 +26,9 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-user-circle-o"></i>
-            <span>Users Options</span>
-            <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="index.php?s=3"><i class="fa fa-plus"></i> Add User</a></li>
-            <li><a href="index.php?s=4"><i class="fa fa-list"></i> User list</a></li>
-           
-          </ul>
-        </li>
-		
-		
-		 <li class="treeview">
-          <a href="#">
-            <i class="fa fa-sitemap"></i>
-            <span>Site settings</span>
-            <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="index.php?s=6"><i class="fa fa-sitemap"></i> Site Updated</a></li>
-          </ul>
-          </li>
-		  
-		  
-		
-		
-		<li class="treeview">
+	  
+	  
+	  <li class="treeview">
           <a href="#">
             <i class="fa fa-file-o"></i>
             <span>Page Options</span>
@@ -101,6 +70,40 @@
             <li><a href="index.php?s=15"><i class="fa fa-list"></i> Product list</a></li>
           </ul>
         </li>
+        
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-user-circle-o"></i>
+            <span>Users Options</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">2</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?s=3"><i class="fa fa-plus"></i> Add User</a></li>
+            <li><a href="index.php?s=4"><i class="fa fa-list"></i> User list</a></li>
+           
+          </ul>
+        </li>
+		
+		
+		 <li class="treeview">
+          <a href="#">
+            <i class="fa fa-sitemap"></i>
+            <span>Site settings</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">2</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?s=6"><i class="fa fa-sitemap"></i> Site Updated</a></li>
+          </ul>
+          </li>
+		  
+		  
+		
+		
+		
 		
 		
         <li>

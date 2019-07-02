@@ -15,15 +15,15 @@
 					
 					
 					case 3:
-					include("add_user.php");
+					include("user/add_user.php");
 					break;
 					
 					case 4:
-					include_once("user_list.php");
+					include_once("user/user_list.php");
 					break;
 					
 					case 5:
-					include_once("edit_user.php");
+					include_once("user/edit_user.php");
 					break;
 					
 	//Site Settings 
@@ -33,15 +33,15 @@
 					
 	//Pages
 					case 7:
-					include_once("add_page.php");
+					include_once("page/add_page.php");
 					break;
 					
 					case 8:
-					include_once("page_list.php");
+					include_once("page/page_list.php");
 					break;
 					
 					case 9:
-					include_once("edit_page.php");
+					include_once("page/edit_page.php");
 					break;
 	
 	//Categorys
