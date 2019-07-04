@@ -33,7 +33,7 @@
             <i class="fa fa-file-o"></i>
             <span>Page Options</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+              <span class="label label-primary pull-right"></span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -48,7 +48,7 @@
             <i class="fa fa-archive"></i>
             <span>Category Options</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+              <span class="label label-primary pull-right"></span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -62,7 +62,7 @@
             <i class="fa fa-product-hunt"></i>
             <span>Product Options</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+              <span class="label label-primary pull-right"></span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -76,7 +76,7 @@
             <i class="fa fa-bars"></i>
             <span>Menu Options</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+              <span class="label label-primary pull-right"></span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -90,7 +90,7 @@
             <i class="fa fa-sliders"></i>
             <span>Slider Options</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+              <span class="label label-primary pull-right"></span>
             </span>
           </a>
           <ul class="treeview-menu">
@@ -104,7 +104,7 @@
             <i class="fa fa-user-circle-o"></i>
             <span>Users Options</span>
             <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+              <span class="label label-primary pull-right"></span>
             </span>
           </a>
           <ul class="treeview-menu">

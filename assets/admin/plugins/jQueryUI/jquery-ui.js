@@ -2151,7 +2151,7 @@ var menu = $.widget( "ui.menu", {
 			my: "left-1 top",
 			at: "right top"
 		},
-		role: "menu",
+		role: "add_menu.php",
 
 		// callbacks
 		blur: null,
@@ -2857,21 +2857,21 @@ $.widget( "ui.autocomplete", {
 					break;
 				case keyCode.ENTER:
 					// when menu is open and has focus
-					if ( this.menu.active ) {
+					if ( this.add_menu.active ) {
 						// #6055 - Opera still allows the keypress to occur
 						// which causes forms to submit
 						suppressKeyPress = true;
 						event.preventDefault();
-						this.menu.select( event );
+						this.add_menu.select( event );
 					}
 					break;
 				case keyCode.TAB:
-					if ( this.menu.active ) {
-						this.menu.select( event );
+					if ( this.add_menu.active ) {
+						this.add_menu.select( event );
 					}
 					break;
 				case keyCode.ESCAPE:
-					if ( this.menu.element.is( ":visible" ) ) {
+					if ( this.add_menu.element.is( ":visible" ) ) {
 						if ( !this.isMultiLine ) {
 							this._value( this.term );
 						}
@@ -2892,7 +2892,7 @@ $.widget( "ui.autocomplete", {
 			keypress: function( event ) {
 				if ( suppressKeyPress ) {
 					suppressKeyPress = false;
-					if ( !this.isMultiLine || this.menu.element.is( ":visible" ) ) {
+					if ( !this.isMultiLine || this.add_menu.element.is( ":visible" ) ) {
 						event.preventDefault();
 					}
 					return;
@@ -2946,12 +2946,12 @@ $.widget( "ui.autocomplete", {
 		this.menu = $( "<ul>" )
 			.addClass( "ui-autocomplete ui-front" )
 			.appendTo( this._appendTo() )
-			.menu({
+			.add_menu({
 				// disable ARIA support, the live region takes care of that
 				role: null
 			})
 			.hide()
-			.menu( "instance" );
+			.add_menu( "instance" );
 
 		this._on( this.menu.element, {
 			mousedown: function( event ) {
@@ -2969,7 +2969,7 @@ $.widget( "ui.autocomplete", {
 				// but we can't detect a mouseup or a click immediately afterward
 				// so we have to track the next mousedown and close the menu if
 				// the user clicks somewhere outside of the autocomplete
-				var menuElement = this.menu.element[ 0 ];
+				var menuElement = this.add_menu.element[ 0 ];
 				if ( !$( event.target ).closest( ".ui-menu-item" ).length ) {
 					this._delay(function() {
 						var that = this;
@@ -2990,7 +2990,7 @@ $.widget( "ui.autocomplete", {
 				if ( this.isNewMenu ) {
 					this.isNewMenu = false;
 					if ( event.originalEvent && /^mouse/.test( event.originalEvent.type ) ) {
-						this.menu.blur();
+						this.add_menu.blur();
 
 						this.document.one( "mousemove", function() {
 							$( event.target ).trigger( event.originalEvent );
@@ -3141,7 +3141,7 @@ $.widget( "ui.autocomplete", {
 
 			// Search if the value has changed, or if the user retypes the same value (see #7434)
 			var equalValues = this.term === this._value(),
-				menuVisible = this.menu.element.is( ":visible" ),
+				menuVisible = this.add_menu.element.is( ":visible" ),
 				modifierKey = event.altKey || event.ctrlKey || event.metaKey || event.shiftKey;
 
 			if ( !equalValues || ( equalValues && !menuVisible && !modifierKey ) ) {
@@ -12308,7 +12308,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 
 		// Initialize menu widget
 		this.menuInstance = this.menu
-			.menu({
+			.add_menu({
 				role: "listbox",
 				select: function( event, ui ) {
 					event.preventDefault();
@@ -12336,7 +12336,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 						that.menuItems.eq( item.index ).attr( "id" ) );
 				}
 			})
-			.menu( "instance" );
+			.add_menu( "instance" );
 
 		// Adjust menu styles to dropdown
 		this.menu
@@ -12624,7 +12624,7 @@ var selectmenu = $.widget( "ui.selectmenu", {
 					this._move( "last", event );
 					break;
 				default:
-					this.menu.trigger( event );
+					this.add_menu.trigger( event );
 					preventDefault = false;
 			}
 
