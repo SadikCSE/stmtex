@@ -28,7 +28,7 @@
 					
 	//Site Settings 
 					case 6:
-					include_once("site_settings.php");
+					include_once("setting/site_settings.php");
 					break;
 					
 	//Pages
@@ -71,11 +71,29 @@
 					
 	//Messages
 					case 16:
-					include_once("messages.php");
+					include_once("messages/messages.php");
 					break;
-					
+
+	//Slider
+					case 17:
+					include_once("slider/add_slider.php");
+					break;
+
+					case 18:
+					include_once("slider/edit_slider.php");
+					break;
+
+	//Menu
+					case 19:
+					include_once("menu/add_menu.php");
+					break;
+
+					case 20:
+					include_once("menu/edit_menu.php");
+					break;
+
 					default:
-					include_once("welcome.php");
+					include_once("welcome/welcome.php");
 					break;
 					
 					

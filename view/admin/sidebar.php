@@ -70,7 +70,35 @@
             <li><a href="index.php?s=15"><i class="fa fa-list"></i> Product list</a></li>
           </ul>
         </li>
-        
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-bars"></i>
+            <span>Menu Options</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">2</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?s=19"><i class="fa fa-plus"></i> Add new Menu </a></li>
+            <li><a href="index.php?s=20"><i class="fa fa-list"></i> Menu list</a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-sliders"></i>
+            <span>Slider Options</span>
+            <span class="pull-right-container">
+              <span class="label label-primary pull-right">2</span>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="index.php?s=17"><i class="fa fa-plus"></i> Add new Slider </a></li>
+            <li><a href="index.php?s=18"><i class="fa fa-list"></i> Slider list</a></li>
+          </ul>
+        </li>
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-user-circle-o"></i>
@@ -87,21 +115,17 @@
         </li>
 		
 		
-		 <li class="treeview">
-          <a href="#">
-            <i class="fa fa-sitemap"></i>
-            <span>Site settings</span>
-            <span class="pull-right-container">
-              <span class="label label-primary pull-right">2</span>
+
+
+
+          <li>
+              <a href="index.php?s=6">
+                  <i class="fa fa-sitemap"></i> <span>Site Updated</span>
+                  <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
             </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="index.php?s=6"><i class="fa fa-sitemap"></i> Site Updated</a></li>
-          </ul>
+              </a>
           </li>
-		  
-		  
-		
 		
 		
 		

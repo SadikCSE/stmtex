@@ -1,3 +1,4 @@
+
 <section class="content">
       <div class="row">
 	    <div class="col-md-12">
@@ -53,15 +54,12 @@
 					<label class="radio-inline">
 					  <input type="radio" name="optradio" checked>Disable
 					</label>
-			 
-                
-              </div>
+			    </div>
               <!-- /.box-body -->
               <div class="box-footer">
                 <button type="submit" class="btn btn-info">Submit</button>
               </div>
-			  
-              <!-- /.box-footer -->
+			  <!-- /.box-footer -->
             </form>
 		  </div>
 
@@ -69,4 +67,4 @@
         <!--/.col (right) -->
       </div>
       <!-- /.row -->
-    </section> 
+</section>
