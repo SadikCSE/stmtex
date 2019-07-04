@@ -16,6 +16,8 @@
 <script src="../assets/admin/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../assets/admin/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script src="../assets/admin/datatables.net/js/jquery.dataTables.min.js"></script>
+ <script src="../assets/admin/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- FastClick -->
 <script src="../assets/admin/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
@@ -32,7 +34,7 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="../assets/admin/js/pages/dashboard2.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../assets/admin/js/demo.js"></script>
+<script src="../assets/admin/dist/js/demo.js"></script>
  <script src="../assets/admin/ckeditor/ckeditor.js"></script>
  <!-- Bootstrap WYSIHTML5 -->
  <script src="../assets/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
@@ -43,6 +45,19 @@
          CKEDITOR.replace('editor1')
          //bootstrap WYSIHTML5 - text editor
          $('.textarea').wysihtml5()
+     })
+ </script>
+ <script>
+     $(function () {
+         $('#example1').DataTable()
+         $('#example2').DataTable({
+             'paging'      : true,
+             'lengthChange': false,
+             'searching'   : false,
+             'ordering'    : true,
+             'info'        : true,
+             'autoWidth'   : false
+         })
      })
  </script>
 </body>

@@ -46,27 +46,27 @@
 	
 	//Categorys
 					case 10:
-					include_once("add_category.php");
+					include_once("category/add_category.php");
 					break;
 					
 					case 11:
-					include_once("category_list.php");
+					include_once("category/category_list.php");
 					break;
 					
 					case 12:
-					include_once("edit_category.php");
+					include_once("category/edit_category.php");
 					break;
 	//Products
 					case 13:
-					include_once("add_product.php");
+					include_once("product/add_product.php");
 					break;
 					
 					case 14:
-					include_once("product_list.php");
+					include_once("product/product_list.php");
 					break;
 					
 					case 15:
-					include_once("edit_product.php");
+					include_once("product/edit_product.php");
 					break;
 					
 	//Messages

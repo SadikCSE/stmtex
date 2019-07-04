@@ -1,8 +1,4 @@
-<?php include '../view/admin/head.php';?>  
-<?php include '../view/admin/header.php';?>
-<?php include '../view/admin/sidebar.php';?> 
-<div class="content-wrapper" style="min-height: 946.3px;">
-    <!-- Content Header (Page header) -->
+<!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
         Mailbox
@@ -276,5 +272,3 @@
       <!-- /.row -->
     </section>
     <!-- /.content -->
-  </div>
-<?php include '../view/admin/footer.php';?>   
